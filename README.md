@@ -1,6 +1,8 @@
 # Update (08/2025): 
 
-No longer maintained. The goal was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was somewhat error-prone. I'm building a new PC-wide captioning app that will lower system requirements, improve accuracy and add new features like a proper save system. Waitlist here (ETA this year): https://tally.so/r/3q85yO
+I'm working on a new app that will lower system requirements, improve accuracy and add new features like a proper save system. Waitlist here (ETA this year): https://tally.so/r/3q85yO
+
+This project is no longer maintained. The goal was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was somewhat error-prone. 
 
 # System Captioner
 
