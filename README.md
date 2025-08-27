@@ -1,3 +1,7 @@
+# Update (08/2025): 
+
+No longer maintained. The goal was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was somewhat error-prone. I'm building a new PC-wide captioning app that will lower system requirements, improve accuracy and add new features like a proper save system. Waitlist here (ETA this year): https://tally.so/r/3q85yO
+
 # System Captioner
 
 Generates and shows real-time captions by listening to your Windows PC's audio. Makes digital content more accessible for those who are deaf or hard of hearing, aids language learning, and more. 
