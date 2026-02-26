@@ -1,8 +1,8 @@
-# Update (08/2025): 
+# Update (02/2026): 
 
-I'm working on a new app that will lower system requirements, improve accuracy and add new features like a proper save system. Waitlist here (ETA this year): https://tally.so/r/3q85yO
+This project is no longer maintained. I've since built [Hearica](https://hearica.com), a captioning app with lower requirements, better accuracy, and new features like session saving with audio replay. 
 
-This project is no longer maintained. The goal was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was somewhat error-prone. 
+The original goal of this repo was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was quite error-prone. 
 
 # System Captioner
 
