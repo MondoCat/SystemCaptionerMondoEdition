@@ -1,58 +1,6 @@
-# SYSTEM CAPTURE: MONDO EDITION
-I am autistic AS FUCK and I need closed captions or I will die. A lot of shows don't have captions. Some Youtube channels dont have captions, and public lobbies in vrchat DEFINITELY don't have captions. After getting the Quest 3, which DOES caption vrchat public lobbies, I am spoiled, and I wanted captions when I am in desktop mode.
-
-Windows 11 comes with a captioner, but it sucks. There's no other free captioner that did what I wanted to, except System Captioner was close.
-
-System Captioner has been edited to do what I want, so I shall share it with you all!
-
-I think there's a bug right now, in particular with the LARGE model where it will freeze after awhile, and it just needs restarted to get back to action. Stay tuned :tm: as we get that fixed.
-
-
-This is 100% free, does not need to log into any server. There are no limits. It just -works-. Thank god for the OG creator.
-
------
-But Mondo! What got changed from the OG?
-
-- Config editing added in general, which lets you edit font, font color, background color, opacity, etc. on the fly.
-- Config editing added to the GUI!
-- Titlebar added with option to turn off.
-- Right click to move the window, Left click to copy text.
-- AutoScroll on/off added in general & to the GUI on the fly
-- Cool oil slick background & Mondo pic in the GUI.
-- Reizeable window on the fly.
-- Prolly some other stuff.
-
-If you liked this readme, consider the time it took for me to type it out! Feel free to throw a couple bucks at me, it means a lot and will motivate me to write more readmes, FAQs, etc! -> https://mondocat.gumroad.com/coffee
-
-
------
-
-<img width="662" height="662" alt="MondoCat_ColorFixed_2025_Twitch" src="https://github.com/user-attachments/assets/5e2d90fd-8124-4fbb-a22a-67a3a59b5433" />
-
-This is Norm, he is the Mondocat. He appears in human form as a girl/boy/enby. He is here to serve as a sperator between my text and the original repo text.
-
-
-
-
-
-
-
-
-------
-
-Below is the info from the original repo
-
-
-
-
-
-
-
-
-
 # Update (02/2026): 
 
-Th(e original) project is no longer maintained. I've since built [Hearica](https://hearica.com), a captioning app with lower requirements, better accuracy, and new features like session saving with audio replay. 
+This project is no longer maintained. I've since built [Hearica](https://hearica.com), a captioning app with lower requirements, better accuracy, and new features like session saving with audio replay. 
 
 The original goal of this repo was an easy-to-install accessibility tool for everyone, but Whisper models turned out to be difficult to run for many users, and the chunking strategy used to compensate for the fact that Whisper models are not made for live captioning was quite error-prone. 
 

@@ -4,25 +4,20 @@ import PyInstaller.__main__
 import faster_whisper
 
 def build_portable():
-    # Get the current directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
-    # Define paths
     dist_path = os.path.join(current_dir, 'dist')
     build_path = os.path.join(current_dir, 'build')
     nvidia_deps_path = os.path.join(current_dir, 'nvidia_dependencies')
     icon_path = os.path.join(current_dir, 'icon.ico')
     
-    # Get faster_whisper assets path
     faster_whisper_path = os.path.dirname(faster_whisper.__file__)
     assets_path = os.path.join(faster_whisper_path, 'assets')
     
-    # Clean previous builds
     for path in [dist_path, build_path]:
         if os.path.exists(path):
             shutil.rmtree(path)
     
-    # PyInstaller configuration for main.py
     PyInstaller.__main__.run([
         'main.py',
         '--name=SystemCaptioner',
@@ -30,14 +25,16 @@ def build_portable():
         f'--icon={icon_path}',
         '--noconsole',
         '--clean',
-        # Add all necessary data files
         '--add-data=icon.ico;.',
+        '--add-data=cat.ico;.',
+        '--add-data=border.png;.',
+        '--add-data=cat.png;.',
         '--add-data=transcriber.py;.',
         '--add-data=recorder.py;.',
         '--add-data=console.py;.',
         f'--add-data={assets_path};faster_whisper/assets',
-        # Add all necessary hidden imports
         '--hidden-import=queue',
+        '--hidden-import=gui',
         '--hidden-import=configparser',
         '--hidden-import=customtkinter',
         '--hidden-import=setupGUI',
@@ -61,7 +58,6 @@ def build_portable():
         '--collect-all=customtkinter',
     ])
     
-    # PyInstaller configuration for controller.py
     PyInstaller.__main__.run([
         'controller.py',
         '--name=Controller',
@@ -69,12 +65,11 @@ def build_portable():
         f'--icon={icon_path}',
         '--noconsole',
         '--clean',
-        # Add necessary data files if any
         f'--add-data={assets_path};faster_whisper/assets',
-        # Add hidden imports
         '--hidden-import=queue',
         '--hidden-import=configparser',
         '--hidden-import=setupGUI',
+        '--hidden-import=gui',
         '--hidden-import=torch',
         '--hidden-import=whisper',
         '--hidden-import=numpy',
@@ -93,7 +88,6 @@ def build_portable():
         '--collect-all=faster_whisper',
     ])
     
-    # Copy NVIDIA dependencies if they exist
     if os.path.exists(nvidia_deps_path):
         target_nvidia_path = os.path.join(dist_path, 'SystemCaptioner', 'nvidia_dependencies')
         if os.path.exists(target_nvidia_path):
@@ -101,16 +95,13 @@ def build_portable():
         shutil.copytree(nvidia_deps_path, target_nvidia_path)
         print("NVIDIA dependencies copied successfully")
     
-    
     print("Build completed successfully!")
     
-    # Post-build steps
     try:
         dist_system_captioner = os.path.join(dist_path, 'SystemCaptioner')
         dist_controller = os.path.join(dist_path, 'Controller')
         controller_internal = os.path.join(dist_system_captioner, 'Controller', '_internal')
         
-        # Move Controller folder inside SystemCaptioner
         if os.path.exists(dist_controller):
             target_controller = os.path.join(dist_system_captioner, 'Controller')
             if os.path.exists(target_controller):
@@ -118,7 +109,6 @@ def build_portable():
             shutil.move(dist_controller, target_controller)
             print("Controller folder moved successfully")
         
-        # Copy NVIDIA dependencies to Controller/_internal
         nvidia_src = os.path.join(dist_system_captioner, 'nvidia_dependencies')
         if os.path.exists(nvidia_src):
             nvidia_dest = os.path.join(controller_internal, 'nvidia_dependencies')
@@ -127,7 +117,6 @@ def build_portable():
             shutil.copytree(nvidia_src, nvidia_dest)
             print("NVIDIA dependencies copied to Controller/_internal successfully")
         
-        # Copy icon.ico from _internal to root
         icon_src = os.path.join(dist_system_captioner, '_internal', 'icon.ico')
         icon_dest = os.path.join(dist_system_captioner, 'icon.ico')
         if os.path.exists(icon_src):

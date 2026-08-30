@@ -15,17 +15,22 @@ from gui import SubtitleGUI  # No change needed
 
 # Change the hardcoded path to a relative path
 cuda_dll_path = os.path.join(os.path.dirname(__file__), "nvidia_dependencies")
-os.environ['PATH'] = f"{cuda_dll_path}{os.pathsep}{os.environ['PATH']}"
-sys.path.append(cuda_dll_path)
 
-# Explicitly add the DLL to the DLL search path
-os.add_dll_directory(cuda_dll_path)
+# Check if the directory actually exists before trying to load it
+if os.path.exists(cuda_dll_path):
+    os.environ['PATH'] = f"{cuda_dll_path}{os.pathsep}{os.environ['PATH']}"
+    sys.path.append(cuda_dll_path)
 
-try:
-    ctypes.CDLL(os.path.join(cuda_dll_path, "cudnn_ops_infer64_8.dll"))
-    print("Successfully loaded cudnn_ops_infer64_8.dll", flush=True)
-except Exception as e:
-    print(f"Error loading cudnn_ops_infer64_8.dll: {e}", flush=True)
+    # Explicitly add the DLL to the DLL search path
+    os.add_dll_directory(cuda_dll_path)
+
+    try:
+        ctypes.CDLL(os.path.join(cuda_dll_path, "cudnn_ops_infer64_8.dll"))
+        print("Successfully loaded cudnn_ops_infer64_8.dll", flush=True)
+    except Exception as e:
+        print(f"Error loading cudnn_ops_infer64_8.dll: {e}", flush=True)
+else:
+    print("NVIDIA dependencies folder not found. Relying on global system CUDA installation.", flush=True)
 
 def start_recording():
     """Start the audio recording process."""
