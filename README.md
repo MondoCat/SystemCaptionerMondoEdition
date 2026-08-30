@@ -10,10 +10,6 @@ I think there's a bug right now, in particular with the LARGE model where it wil
 
 This is 100% free, does not need to log into any server. There are no limits. It just -works-. Thank god for the OG creator.
 
-<img width="662" height="662" alt="MondoCat_ColorFixed_2025_Twitch" src="https://github.com/user-attachments/assets/5e2d90fd-8124-4fbb-a22a-67a3a59b5433" />
-
-This is Norm, he is the Mondocat. He appears in human form as a girl/boy/enby. He is here to serve as a sperator between my text and the original repo text.
-
 -----
 But Mondo! What got changes from the OG?
 
@@ -30,6 +26,9 @@ If you liked this readme, consider the time it took for me to type it out! Feel 
 
 -----
 
+<img width="662" height="662" alt="MondoCat_ColorFixed_2025_Twitch" src="https://github.com/user-attachments/assets/5e2d90fd-8124-4fbb-a22a-67a3a59b5433" />
+
+This is Norm, he is the Mondocat. He appears in human form as a girl/boy/enby. He is here to serve as a sperator between my text and the original repo text.
 
 
 
