@@ -1,4 +1,4 @@
-# SYSTEM CAPTURE MONDO EDITION
+# SYSTEM CAPTURE: MONDO EDITION
 I am autistic AS FUCK and I need closed captions or I will die. A lot of shows don't have captions. Some Youtube channels dont have captions, and public lobbies in vrchat DEFINITELY don't have captions. After getting the Quest 3, which DOES caption vrchat public lobbies, I am spoiled, and I wanted captions when I am in desktop mode.
 
 Windows 11 comes with a captioner, but it sucks. There's no other free captioner that did what I wanted to, except System Captioner was close.
@@ -13,6 +13,20 @@ This is 100% free, does not need to log into any server. There are no limits. It
 <img width="662" height="662" alt="MondoCat_ColorFixed_2025_Twitch" src="https://github.com/user-attachments/assets/5e2d90fd-8124-4fbb-a22a-67a3a59b5433" />
 
 This is Norm, he is the Mondocat. He appears in human form as a girl/boy/enby. He is here to serve as a sperator between my text and the original repo text.
+
+-----
+But Mondo! What got changes from the OG?
+
+- Config editing added in general, which lets you edit font, font color, background color, opacity, etc.
+- Config editing added to the GUI!
+- Titlebar added with option to turn off
+- Right click to move the window, Left click to copy text
+- AutoScroll on/off added in general & to teh GUI
+- Cool oil slick background & mondo pic in the gui
+- Prolly some other stuff
+
+If you liked this readme, consider the time it took for me to type it out! Feel free to throw a couple bucks at me, it means a lot and will motivate me to write more readmes, FAQs, etc! -> https://mondocat.gumroad.com/coffee
+
 
 -----
 
