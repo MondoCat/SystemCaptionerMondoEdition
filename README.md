@@ -26,8 +26,14 @@ If you liked this readme, consider the time it took for me to type it out! Feel 
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, LITERACY OR ILLITERACY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Screenshot:
+Screenshots:
 <img width="1919" height="1046" alt="image" src="https://github.com/user-attachments/assets/70e9b0c7-bf1b-4798-9fbf-961b6a00d51d" />
+<img width="1547" height="1046" alt="image" src="https://github.com/user-attachments/assets/245d3d41-c4ae-4540-bf4d-348b91ae907c" />
+It works everywhere!
+
+Known Issues:
+- It doesn't work with a TTS program (?)
+- Sometimes it crashes when left on for a long time?
 
 -----
 
