@@ -13,13 +13,14 @@ This is 100% free, does not need to log into any server. There are no limits. It
 -----
 But Mondo! What got changed from the OG?
 
-- Config editing added in general, which lets you edit font, font color, background color, opacity, etc.
+- Config editing added in general, which lets you edit font, font color, background color, opacity, etc. on the fly.
 - Config editing added to the GUI!
-- Titlebar added with option to turn off
-- Right click to move the window, Left click to copy text
-- AutoScroll on/off added in general & to teh GUI
-- Cool oil slick background & mondo pic in the gui
-- Prolly some other stuff
+- Titlebar added with option to turn off.
+- Right click to move the window, Left click to copy text.
+- AutoScroll on/off added in general & to the GUI on the fly
+- Cool oil slick background & Mondo pic in the GUI.
+- Reizeable window on the fly.
+- Prolly some other stuff.
 
 If you liked this readme, consider the time it took for me to type it out! Feel free to throw a couple bucks at me, it means a lot and will motivate me to write more readmes, FAQs, etc! -> https://mondocat.gumroad.com/coffee
 
