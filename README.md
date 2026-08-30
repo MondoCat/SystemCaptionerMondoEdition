@@ -11,7 +11,7 @@ I think there's a bug right now, in particular with the LARGE model where it wil
 This is 100% free, does not need to log into any server. There are no limits. It just -works-. Thank god for the OG creator.
 
 -----
-But Mondo! What got changes from the OG?
+But Mondo! What got changed from the OG?
 
 - Config editing added in general, which lets you edit font, font color, background color, opacity, etc.
 - Config editing added to the GUI!
