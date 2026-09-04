@@ -8,7 +8,7 @@ System Captioner has been edited to do what I want, so I shall share it with you
 I think there's a bug right now, in particular with the LARGE model where it will freeze after awhile, and it just needs restarted to get back to action. Stay tuned :tm: as we get that fixed.
 
 
-This is 100% free, does not need to log into any server. There are no limits. It just -works-. Thank god for the OG creator.
+This is 100% free, does not need to log into any server. There are no limits that I've ever hit. It just -works-. Thank god for the OG creator.
 
 -----
 But Mondo! What got changed from the OG?
